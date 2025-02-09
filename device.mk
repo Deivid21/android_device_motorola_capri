@@ -50,8 +50,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
-DEVICE_NFC_SKUS := b bc d dc f fc
-DEVICE_COMPASS_SKUS := b d dn f n
+DEVICE_NFC_SKUS := b d f
 
 PRODUCT_COPY_FILES += \
 $(foreach DEVICE_SKU, $(DEVICE_NFC_SKUS), \
@@ -62,8 +61,7 @@ $(foreach DEVICE_SKU, $(DEVICE_NFC_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/com.nxp.mifare.xml)
 
 PRODUCT_COPY_FILES += \
-$(foreach DEVICE_SKU, $(DEVICE_COMPASS_SKUS), \
-    $(LOCAL_PATH)/permissions/unavail.android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.sensor.compass.xml)
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.compass.xml
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 30
