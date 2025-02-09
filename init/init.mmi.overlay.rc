@@ -1,3 +1,7 @@
+service audiopara-sh /vendor/bin/init.mmi.acdb.sh
+    class core
+    user root
+    oneshot
 
 on early-init && property:ro.bootmode=mot-factory
    insmod /vendor/lib/modules/moto_f_usbnet.ko
@@ -9,6 +13,8 @@ on mmi-priority
    # to perform firmware update if necessary
    setprop vendor.mmi_init.stage priority
    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mmi_annotate mmi_info tzlog_dump watchdog_cpu_ctx mmi_sys_temp
+   # These props should be loaded as soon as possible
+   start audiopara-sh
 
 on fs
    # Majority of MMI DLKMs should be in this group
@@ -55,9 +61,6 @@ on boot
    # change permission for adaptive charging
    chown system system /sys/module/qpnp_adaptive_charge/parameters/upper_limit
    chown system system /sys/module/qpnp_adaptive_charge/parameters/lower_limit
-   # change ownership of display early suspend node
-   chown root system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_early_power
-   chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_early_power
 
 #service vendor.mmi_modules /vendor/bin/init.mmi.modules.sh
 #    user root
