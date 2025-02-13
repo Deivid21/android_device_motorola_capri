@@ -38,6 +38,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/hw/com.qti.chi.override.so',
     ): blob_fixup()
         .binary_regex_replace(b'camera.mot.is.coming.cts', b'vendor.camera.coming.cts'),
+    'vendor/lib64/liblowlight_ai_portrait.arcsoft.so': blob_fixup()
+        .fix_soname(),
 }  # fmt: skip
 
 extract_fns: extract_fns_user_type = {
