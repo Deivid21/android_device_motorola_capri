@@ -1,7 +1,6 @@
 # All unpinned blobs below are extracted from capri_retail RRBS31.Q1-3-58-19
 
 # ACDB
-vendor/bin/init.mmi.acdb.sh
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/common/Bluetooth_cal.acdb:vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/common/General_cal.acdb:vendor/etc/acdbdata/General_cal.acdb

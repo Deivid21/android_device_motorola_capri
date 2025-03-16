@@ -25,6 +25,7 @@ TARGET_SCREEN_WIDTH := 720
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.mmi.acdb.sh \
     init.oem.fingerprint.sh \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc
