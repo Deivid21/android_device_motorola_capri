@@ -42,8 +42,7 @@
         <value>1056000</value>
         <value>1401600</value>
         <value>1536000</value>
-        <value>1804800</value>
-        <value>2016000</value>
+        <value>1612800</value>
     </array>
     <array name="cpu.core_power.cluster0">
         <value>7.9</value>
@@ -59,11 +58,10 @@
         <value>18.3</value>
         <value>28.6</value>
         <value>77.3</value>
-        <value>87.9</value>
         <value>99</value>
-        <value>152.8</value>
-        <value>246.3</value>
-        <value>277.1</value>
+        <value>132.8</value>
+        <value>146.3</value>
+        <value>167.1</value>
     </array>
     <item name="cpu.cluster_power.cluster0">0.7</item>
     <item name="cpu.cluster_power.cluster1">6.7</item>
