@@ -17,6 +17,12 @@ prebuilt_etc {
 }
 
 sh_binary {
+    name: "init.mmi.acdb.sh",
+    src: "init.mmi.acdb.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.oem.fingerprint.sh",
     src: "init.oem.fingerprint.sh",
     vendor: true,
