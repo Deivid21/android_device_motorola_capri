@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from capri_retail RRBS31.Q1-3-58-19
+# All unpinned blobs below are extracted from capri_retail RRB31.Q1-3-48-24
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
