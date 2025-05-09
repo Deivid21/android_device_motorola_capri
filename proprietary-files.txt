@@ -210,6 +210,9 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/lib64/libpn557_fw.so
 
+# OEM
+vendor/etc/vhw.xml
+
 # Sensors configs
 vendor/etc/sensors/config/bengal_default_sensors.json
 vendor/etc/sensors/config/bengal_dynamic_sensors.json
@@ -291,3 +294,6 @@ vendor/firmware/ILITEK_FW_TXD_7806S:recovery/root/vendor/firmware/ILITEK_FW_TXD_
 vendor/firmware/ILITEK_FW_TXD_9882H:recovery/root/vendor/firmware/ILITEK_FW_TXD_9882H
 vendor/firmware/djn_novatek_ts_fw.bin:recovery/root/vendor/firmware/djn_novatek_ts_fw.bin
 vendor/firmware/djn_novatek_ts_mp.bin:recovery/root/vendor/firmware/djn_novatek_ts_mp.bin
+
+# WiFi
+vendor/bin/cnss-daemon
