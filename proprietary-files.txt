@@ -182,6 +182,9 @@ vendor/etc/camera/dual_golden_ov8856_wide.bin
 vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/vidhance_calibration
 
+# Capsense
+vendor/bin/capsense_reset
+
 # Display (Calibration Data)
 vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_nt36525b_652.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_ili9882n_652.xml
