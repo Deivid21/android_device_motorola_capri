@@ -67,6 +67,12 @@ $(foreach DEVICE_SKU, $(DEVICE_NFC_SKUS), \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.sensor.compass.xml
 
+# Properties
+PRODUCT_PACKAGES += \
+    carrier.retin.prop \
+    carrier.retmea.prop \
+    hardware.sku.XT2127-3.prop
+
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 30
 PRODUCT_SHIPPING_API_LEVEL := 30

@@ -1,0 +1,10 @@
+ro.product.system.model=moto g(10n) power
+ro.product.system_dlkm.model=moto g(10n) power
+ro.product.system_ext.model=moto g(10n) power
+ro.product.model=moto g(10n) power
+ro.product.odm.model=moto g(10n) power
+ro.product.odm_dlkm.model=moto g(10n) power
+ro.product.product.model=moto g(10n) power
+ro.product.vendor.model=moto g(10n) power
+ro.product.vendor_dlkm.model=moto g(10n) power
+ro.vendor.product.display=moto g(10n) power

@@ -17,3 +17,7 @@ vendor.false_touch_quality=25
 
 # Radio
 ro.vendor.radio.imei.sv=22
+
+# SKU specific properties
+import /vendor/etc/props/carrier.${ro.boot.carrier}.prop
+import /vendor/etc/props/hardware.sku.${ro.boot.hardware.sku}.prop
