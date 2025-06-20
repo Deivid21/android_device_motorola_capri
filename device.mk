@@ -44,8 +44,15 @@ PRODUCT_PACKAGES += \
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResDevice \
+    FrameworksResDeviceRetin \
+    FrameworksResDeviceRetmea \
+    FrameworksResDeviceXT2127-3 \
     LineagePlatformDevice \
-    SystemUIResDevice
+    SystemUIResDevice \
+    WifiResDevice \
+    WifiResDeviceRetin \
+    WifiResDeviceRetmea \
+    WifiResDeviceXT2127-3
 
 # Permissions
 PRODUCT_COPY_FILES += \
