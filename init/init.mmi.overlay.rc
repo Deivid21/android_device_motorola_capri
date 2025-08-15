@@ -1,16 +1,9 @@
-service audiopara-sh /vendor/bin/init.mmi.acdb.sh
-    class core
-    user root
-    oneshot
-
 on mmi-priority
     # Only high priority MMI DLKMs loaded here
     # For instance, sensor_class referenced from several DLKMs
     # and needs to load first. Touchscreen might need extra time
     # to perform firmware update if necessary
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules mmi_annotate mmi_info mmi_sys_temp
-    # These props should be loaded as soon as possible
-    start audiopara-sh
 
 on fs
     # Majority of MMI DLKMs should be in this group
@@ -37,3 +30,12 @@ service vendor.mmi-laser-sh /vendor/bin/init.mmi.laser.sh
     class core
     user root
     oneshot
+
+on property:ro.vendor.hw.batt="6000"
+    setprop persist.vendor.audio.calfile0 /vendor/etc/acdbdata/power/Bluetooth_cal.acdb
+    setprop persist.vendor.audio.calfile1 /vendor/etc/acdbdata/power/General_cal.acdb
+    setprop persist.vendor.audio.calfile2 /vendor/etc/acdbdata/power/Global_cal.acdb
+    setprop persist.vendor.audio.calfile3 /vendor/etc/acdbdata/power/Handset_cal.acdb
+    setprop persist.vendor.audio.calfile4 /vendor/etc/acdbdata/power/Hdmi_cal.acdb
+    setprop persist.vendor.audio.calfile5 /vendor/etc/acdbdata/power/Headset_cal.acdb
+    setprop persist.vendor.audio.calfile6 /vendor/etc/acdbdata/power/Speaker_cal.acdb
